@@ -1,11 +1,10 @@
 using UnityEditor;
-using UnityEngine;
 
-namespace Editor
+namespace EditorDic
 {
     [CustomEditor(typeof(LevelScript))]
-    public class LevelScriptEditor : UnityEditor.Editor
-    {
+    public class LevelScriptEditor :Editor
+    { 
         public override void OnInspectorGUI()
         {
             LevelScript levelScript = (LevelScript)target;
