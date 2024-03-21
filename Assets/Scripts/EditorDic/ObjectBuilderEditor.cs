@@ -6,6 +6,8 @@ namespace EditorDic
     [CustomEditor(typeof(ObjectBuilder))]
     public class ObjectBuilderEditor : Editor
     {
+        private ObjectBuilder objectBuilder;
+        
         public override void OnInspectorGUI()
         {
             DrawDefaultInspector();
